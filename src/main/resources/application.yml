@@ -1,0 +1,36 @@
+oracle:
+  username: uname
+  password: pass
+  url: jdbc:oracle:thin:@127.0.0.1:1521:XXDB
+  active: true
+
+sftp: 
+  host: 127.0.0.1
+  port: 2223
+  username: uname
+  password: pass
+  directory:
+    remote: /home/uname/
+    local: Z:\\temp\\
+  delay: 10000
+  active: true
+
+file: 
+  read:
+    directory: 
+      file: Z:\\temp\\
+      success : Z:\\success\\
+      fail: Z:\\fail\\
+    delay: 10000
+    active: true
+
+email: 
+  host: smtp.gmail.com
+  port: 587
+  username: xxxxx@gmail.com
+  password: ppppp
+  from: UANME
+  to: yyyyy@hotmail.com
+  cc:
+  bcc: 
+  active: true

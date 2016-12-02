@@ -1,0 +1,36 @@
+oracle:
+  username: uname
+  password: pass
+  url: jdbc:oracle:thin:@127.0.0.1:1521:XXDB
+  active: true
+
+sftp: 
+  host: localhost
+  port: 9999
+  username: uname
+  password: pass
+  directory:
+    remote: \\src\\test\\resources\\ftp_test\\
+    local: Z:\\temp\\
+  delay: 5000
+  active: false
+
+file: 
+  read:
+    directory: 
+      file: Z:\\workspaces\\spring_integration\\src\\test\\resources\\folder_test\\
+      success : Z:\\success\\
+      fail: Z:\\fail\\
+    delay: 5000
+    active: true
+
+email: 
+  host: 127.0.0.1
+  port: 25
+  username: test1234
+  password: test1234
+  from: XXXXX
+  to: test@gethere.com
+  cc:
+  bcc: 
+  active: true
