@@ -1,9 +1,3 @@
-oracle:
-  username: uname
-  password: pass
-  url: jdbc:oracle:thin:@127.0.0.1:1521:XXDB
-  active: true
-
 sftp: 
   host: localhost
   port: 9999
